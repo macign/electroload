@@ -1,0 +1,40 @@
+{
+  "name": "electronloader",
+  "version": "1.0.0",
+  "description": "Electron app reloader!",
+  "main": "index.js",
+  "types": "index.d.ts",
+  "scripts": {
+    "start": "tsc",
+    "clean": "rimraf index.d.ts && rimraf index.js",
+    "build": "npm run lint:fix && tsc",
+    "prepack": "npm run clean && tsc"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/macign/electronloader.git"
+  },
+  "keywords": [
+    "electron",
+    "reload",
+    "auto-reload",
+    "node"
+  ],
+  "author": "Mac Ignacio <mack_ignacio@yahoo.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/macign/electronloader/issues"
+  },
+  "dependencies": {
+    "chokidar": "^3.5.2"
+  },
+  "devDependencies": {
+    "electron": "^13.1.7",
+    "rimraf": "^3.0.2",
+    "standard": "^14.3.3",
+    "typescript": "^4.3.5"
+  },
+  "peerDependencies": {
+    "electron": "^8.1.1"
+  }
+}
