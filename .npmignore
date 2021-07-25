@@ -1,0 +1,6 @@
+.travis.yml
+ISSUE_TEMPLATE.md
+PULL_REQUEST_TEMPLATE.md
+tsconfig.json
+index.ts
+.tgz
